@@ -27,6 +27,7 @@ const {
 } = Astro.props as Props;
 ---
 
+
 <a
   href={href}
   class:list={[
@@ -39,7 +40,8 @@ const {
 >
   {
     icon && icon.side === "left" && (
-      <Icon name={icon.name} height="24" width="24" />
+      <Icon name={icon.name} height={parseInt("24")} width={parseInt("60")}
+/>
     )
   }
 
@@ -47,7 +49,7 @@ const {
 
   {
     icon && icon.side === "right" && (
-      <Icon name={icon.name} height="24" width="24" />
+      <Icon name={icon.name} height={parseInt("24")} width={parseInt("60")} />
     )
   }
 </a>
